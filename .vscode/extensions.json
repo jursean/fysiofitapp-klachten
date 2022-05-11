@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "byCedric.vscode-expo",
+        "editorconfig.editorconfig",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "eg2.vscode-npm-script",
+        "christian-kohler.npm-intellisense",
+        "genuitecllc.codetogether"
+    ]
+}
