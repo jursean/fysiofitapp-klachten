@@ -1,35 +1,42 @@
 {
-    "expo": {
-        "name": "FysioFitApp",
-        "slug": "complaints",
-        "owner": "walkintheparq",
-        "version": "1.0.0",
-        "orientation": "portrait",
-        "icon": "./assets/icon.png",
-        "splash": {
-            "image": "./assets/splash.png",
-            "resizeMode": "contain",
-            "backgroundColor": "#ffffff"
-        },
-        "updates": {
-            "fallbackToCacheTimeout": 0
-        },
-        "assetBundlePatterns": ["**/*"],
-        "ios": {
-            "supportsTablet": true,
-            "bundleIdentifier": "com.fysiofitapp.complaints",
-            "buildNumber": "1.0.0"
-        },
-        "android": {
-            "adaptiveIcon": {
-                "foregroundImage": "./assets/adaptive-icon.png",
-                "backgroundColor": "#FFFFFF"
-            },
-            "package": "com.fysiofitapp.complaints",
-            "versionCode": 1
-        },
-        "web": {
-            "favicon": "./assets/favicon.png"
-        }
+  "expo": {
+    "name": "FysioFitApp",
+    "slug": "complaints",
+    "owner": "walkintheparq",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1F6AB1"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fysiofitapp.complaints",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1F6AB1"
+      },
+      "package": "com.fysiofitapp.complaints",
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "71a707a2-2c6a-4100-8086-1add6b48a393"
+      }
     }
+  }
 }
