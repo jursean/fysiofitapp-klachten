@@ -32,6 +32,6 @@
     "private": true,
     "lint-staged": {
         "src/**/*.{json,css,md}": "prettier --write",
-        "*.{ts,tsx,js}": "eslint --fix"
+        "**/*.{ts,tsx,js,jsx}": "eslint --fix"
     }
 }

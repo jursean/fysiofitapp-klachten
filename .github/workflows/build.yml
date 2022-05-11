@@ -1,0 +1,33 @@
+name: Build on Expo
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+
+jobs:
+    build_and_submit:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
+              with:
+                  node-version-file: '.nvmrc'
+                  cache: 'yarn'
+
+            - run: yarn install
+
+            - name: 🏗 Setup Expo
+              uses: expo/expo-github-action@v7
+              with:
+                  expo-version: latest
+                  eas-version: latest
+                  token: ${{ secrets.EXPO_TOKEN }}
+
+            - name: 🚀 Build app for production
+              if: github.ref_name == 'main'
+              run: eas build --non-interactive --no-wait --platform all --profile=development
+            - name: 🚀 Build app for PR
+              if: github.event_name == 'pull_request'
+              run: eas build --non-interactive --no-wait --platform all --profile=preview
